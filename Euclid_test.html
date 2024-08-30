@@ -1,4 +1,4 @@
-      <!doctype HTML>
+   <!doctype HTML>
       <html>
         <head>
           <script src="https://aframe.io/releases/1.6.0/aframe.min.js"></script>
@@ -9,17 +9,19 @@
         </head>
         <body style='margin : 0px; overflow: hidden;'>
           <a-scene>
- <a-marker-camera preset="custom"  type="pattern" url="https://raw.githubusercontent.com/EquinoxOmega0/AR-HIRO/master/pattern-Euclid_txt.patt">
+              <a-marker-camera preset="custom"  type="pattern" url="https://raw.githubusercontent.com/EquinoxOmega0/AR-HIRO/master/pattern-Euclid_txt.patt">
+
+
 
     <a-assets>
       <a-asset-item id="telescop" src="https://raw.githubusercontent.com/EquinoxOmega0/AR-HIRO/master/euclid.glb"></a-asset-item>
     </a-assets>
 
-		  <a-entity gltf-model="#telescop" scale="0.001 0.001 0.001"></a-entity>
+		  <a-entity gltf-model="#telescop" scale="0.01 0.01 0.01"></a-entity>
+
 	  </a-entity>
-</a-marker-camera>
+              </a-marker-camera>
               <a-entity camera></a-entity>
          </a-scene>
         </body>
       </html>
-    
