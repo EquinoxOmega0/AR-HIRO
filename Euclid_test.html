@@ -10,9 +10,14 @@
         <body style='margin : 0px; overflow: hidden;'>
           <a-scene>
               <a-marker-camera preset="custom"  type="pattern" url="https://raw.githubusercontent.com/EquinoxOmega0/AR-HIRO/master/pattern-Euclid_txt.patt">
-	  <a-entity gltf-model="https://raw.githubusercontent.com/EquinoxOmega0/AR-HIRO/master/euclid.glb" scale="0.1 0.1 0.1">
-		    <a-animation attribute="rotation" dur="10000" fill="forwards" to="0 360 0" repeat="indefinite">
-		  </a-animation>
+
+
+    <a-assets>
+      <a-asset-item id="telescop" src="https://raw.githubusercontent.com/EquinoxOmega0/AR-HIRO/master/euclid.glb"></a-asset-item>
+    </a-assets>
+
+		  <a-entity gltf-model="#telescop" scale="0.01 0.01 0.01"></a-entity>
+	 
 	  </a-entity>
               </a-marker-camera>
               <a-entity camera></a-entity>
